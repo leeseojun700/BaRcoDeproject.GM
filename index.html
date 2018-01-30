@@ -1,10 +1,119 @@
 <!DOCTYPE html>
-<html>
-<title>HTML Tutorial</title>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://leeseojun700.github.io/BaRcoDeproject.GM/">GMpj.</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://leeseojun700.github.io/BaRcoDeproject.GM/">Home</a></li>
+        <li><a href="https://leeseojun700.github.io/BaRcoDe/">바코드로 돌아가기</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="https://leeseojun700.github.io/BaRcoDe">바코드 바로가기</a></p>
+      <p><a href="www.youtube.com/channel/UC3_AQeSJESt1zueDDqrneCA?">바코드TV 바로가기</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>바코드.GameMember</h1>
+      <p>여기에는 바코드의 웹페이지 관련, 또는 TV, 위원회 등 BaRcoDe.systems.project에 도움을 주시는 분을 게시하였습니다.</p>
+      <hr>
+     <h2>정회원</h2>
+      <h3>활동명: 바코드</h3>
+      <p>본명:이서준</p>
+      <p>활동 부서: 바코드 운영관리 위원회, 바코드TV 관리 위원회, 바코드 cwy관리위원회</p>
+      <p>명언: 나는 작지만, 내가 꿈꾸는 세상은 크다.</p>
+      <p>등급: 바코드 총책임 운영 사무 대표장 </p>
+       
+       
+      <h3>활동명: 스캔</h3>
+      <p>본명:김채현</p>
+      <p>활동 부서: 바코드TV 관리 위원회</p>
+      <p>명언: 깔끔하게 먹을 수도 있다.</p>
+      <p>등급: 바코드 매니저 및 scanTV 운영자</p>
+      
+      <h3>활동명: 시오</h3>
+      <p>본명:조민훈</p>
+      <p>활동 부서: 바코드 운영관리 위원회</p>
+      <p>명언: 넓은 세상 속에서 소소하지만 작은 기쁨을 누리며 살라.</p>
+      <p>등급: 바코드 프로젝트 제작 도움자 및 시.오.TV 운영자</p>
+      
+      <h2>예비회원</h2>
+      <h3>활동명: 뚜벅이</h3>
+      <p>활동 부서: 바코드TV 운영 위원회</p>
+      <p>명언: 오늘의 수고가 내일의 기쁨</p>
+      <p>등급: 뚜벅이의 게임채널 예비 회원 및 강습자</p>
+      
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>광고삽입예정</p>
+      </div>
+      <div class="well">
+        <p>광고삽입예정</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
 
 </body>
 </html>
